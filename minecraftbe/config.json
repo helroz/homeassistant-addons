@@ -6,7 +6,8 @@
   "boot": "auto",
   "description": "Minecraft Dedicated Server",
   "environment": {
-    "EULA": "TRUE"
+    "EULA": "TRUE",
+    "SERVER_UDP_PORTS": "19140-19155"
   },
   "map": [
     "share:rw"
@@ -14,10 +15,29 @@
   "name": "minecraftbe",
   "options": {},
   "ports": {
-    "19132/udp": 19132
+    "19132/tcp": 19132,
+    "19132/udp": 19132,
+    "19140/udp": 19140,
+    "19141/udp": 19141,
+    "19142/udp": 19142,
+    "19143/udp": 19143,
+    "19144/udp": 19144,
+    "19145/udp": 19145,
+    "19146/udp": 19146,
+    "19147/udp": 19147,
+    "19148/udp": 19148,
+    "19149/udp": 19149,
+    "19150/udp": 19150,
+    "19151/udp": 19151,
+    "19152/udp": 19152,
+    "19153/udp": 19153,
+    "19154/udp": 19154,
+    "19155/udp": 19155
   },
   "ports_description": {
-    "19132/udp": "Api Port"
+    "19132/tcp": "Minecraft TCP Signaling",
+    "19132/udp": "Minecraft UDP Port",
+    "19140/udp": "NetherNet UDP Range 19140-19155"
   },
   "schema": {},
   "slug": "minecraftbe",
